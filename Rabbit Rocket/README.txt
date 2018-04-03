@@ -1,7 +1,7 @@
 
-Rabbit Rocket is a 2D shooting game. Shoot the stars to collect your points and evade as much as possible! If you shoot an alien, you will lose your points.\
+Rabbit Rocket is a 2D shooting game. Shoot the stars to collect your points and evade as much as possible! If you shoot an alien, you will lose your points.
 
-You can select its difficulty by entering a number between 1 and 4 in its setting, which appears first. The difficulty is determined by how often it produces an asteroid or alien.\
+You can select its difficulty by entering a number between 1 and 4 in its setting, which appears first. The difficulty is determined by how often it produces an asteroid or alien.
 
 Producing an asteroid or alien per:
 
@@ -17,7 +17,7 @@ Alien: 	-5 points
 
 How to play:
 
-Open SpaceGame.class -> Set the difficulty level -> Press the button
+Open RabbitRocket.jar -> Set the difficulty level -> Press the button
 
 Movement:
 
