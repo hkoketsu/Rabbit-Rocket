@@ -7,8 +7,6 @@ Audio for the game. Both background music and sound effects.
 import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
-import java.lang.Thread;
-import java.lang.Exception;
 
 import javax.sound.sampled.*;
 

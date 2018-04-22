@@ -14,7 +14,6 @@ import java.awt.Color;
 import java.awt.RenderingHints;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
 import java.util.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -23,6 +22,10 @@ import javax.imageio.ImageIO;
 
 public class GameComponent extends JComponent {
 
+		/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 		private final static Font GAME_OVER_FONT = new Font(Font.SERIF, Font.BOLD, 100);
 		private final static Font RESTART_FONT = new Font(Font.SERIF, Font.PLAIN, 40);
 		private final static Font TIME_LAP_FONT = new Font(Font.SERIF, Font.PLAIN, 20);
@@ -45,10 +48,8 @@ public class GameComponent extends JComponent {
 		private static int difficulty; // how often asteroid is created, larger -> easier
 		private long whenDamaged = 0;
 		private long lastDamaged = 0;
-		private boolean isDamaged;
-
-
-		// pre-load the font to avoid lag on Macs, but still has lag before the game starts
+		
+		// Pre-load the font to avoid lag on mac, but still has lag before the game starts
 		// AKN: Jeremy H
 		private final static SwingWorker<Void, Void> assetLoader = new SwingWorker<Void, Void>() {
 			public Void doInBackground() {
@@ -79,7 +80,7 @@ public class GameComponent extends JComponent {
 
 		/**
 		Paints components, such as ship, asteroid, cannon, score.
-		@param g Graphics interface to be installed to paint compoennts
+		@param g Graphics interface to be installed to paint components
 		*/
 		public void paintComponent(Graphics g) {
 			Graphics2D g2 = (Graphics2D) g;

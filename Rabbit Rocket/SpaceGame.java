@@ -7,19 +7,21 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.Button;
 import java.awt.Color;
-import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.TextField;
 import javax.swing.*;
 import java.io.IOException;
 import java.io.File;
 import java.awt.image.BufferedImage;
-import java.lang.NumberFormatException;
 import javax.imageio.ImageIO;
 
 public class SpaceGame extends JFrame implements ActionListener{
 
-  private static SpaceGame game;
+  /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+private static SpaceGame game;
   private static GameComponent comp;
 
   private TextField tf;
@@ -63,7 +65,7 @@ public class SpaceGame extends JFrame implements ActionListener{
     game.setLocation(200, 100);
     game.getContentPane().setBackground(Color.BLACK);
     game.setVisible(true);
-    game.comp.start();
+    SpaceGame.comp.start();
   }
 
   public static void destroyFrameAndRestart() {

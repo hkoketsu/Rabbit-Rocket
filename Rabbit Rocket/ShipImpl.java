@@ -4,7 +4,6 @@ ShipImpl has the implementation of Ship. It also includes the implementation of 
 @version 2017-07-01 11h30
 */
 
-import javax.swing.*;
 import java.awt.*;
 import java.awt.geom.*;
 import java.io.File;
@@ -15,10 +14,6 @@ import javax.imageio.ImageIO;
 
 public class ShipImpl implements Ship {
 
-	private final static Color FILL = Color.BLUE;
-
-	private final static int HIGHEST_I = 0; // the array position of the top
-	private final static int FRONT_I = 1;
 	private final static int HEIGHT = 80;
 	private final static int WIDTH = 160;
 

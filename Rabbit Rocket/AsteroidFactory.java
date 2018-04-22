@@ -10,7 +10,6 @@ import java.awt.geom.*;
 import java.util.Random;
 import java.io.File;
 import java.io.IOException;
-import java.lang.Math;
 import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
 
@@ -76,7 +75,6 @@ public class AsteroidFactory {
 	}
 
 	private static class AsteroidImpl implements Asteroid {
-		private final static Color COLOR = Color.LIGHT_GRAY;
 		private int x;
 		private int y;
 		private final int x_speed;
@@ -97,7 +95,7 @@ public class AsteroidFactory {
 		@param ys the speed of asteroid toward y-axis
 		@param sz the size of asteroid
 		@param sc the size level of asteroid (1 - 5)
-		@param c the factor to decide which enermy to produce
+		@param c the factor to decide which enemy to produce
 		*/
 		private AsteroidImpl(int[] x, int[] y, int xs, int ys, int sz, int sc, int c) {
 			shape = new Polygon(x, y, x.length);
